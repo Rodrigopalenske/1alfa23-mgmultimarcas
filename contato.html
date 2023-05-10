@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,11 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
     <header>
         <section>
-           <div id="header">
+            <div id="header">
                 <div id="logotipo">
                     <img src="img/logotipo.png" alt="Logotipo MG Multimarcas">
                 </div>
@@ -26,29 +28,71 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="#financiamento">Financiamento</a></li>
+                <li><a href="index.html #financiamento">Financiamento</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     <div id="main">
         <section class="content">
-            <h3>Dados de contato</h3>
-                <p> 
-                    (44)9999-9999<br>
-                    contato@falacomigobb.com<br>
-                    Rua Minha Rua, 0171 - Centro<br>
-                    Umuarama - PR
+            <div class="div-50 faleconosco">
+                <h3>Fale com a nossa equipe</h3>
+                <p>
+                    (44)9999-9999 - contato@falacomigobb.com <br>
+                    Rua Minha Rua, 0171 - Centro - Umuarama - PR
                 </p>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d67603.7518586893!2d-52.13826762285068!3d-15.886212686640498!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2sbr!4v1681261811815!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <form action="" method="_GET">
+                    <div class="campo">
+                        <input type="text" name="nome" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="campo">
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="campo">
+                        <select name="assunto" id="assunto">
+                            <option>Escolha um assunto</option>
+                            <option value="financiamento">Financiamento</option>
+                            <option value="vendas">Vendas</option>
+                            <option value="reclamacoes">Reclamações</option>
+                            <option value="sugestoes">Sugestões</option>
+                            <option value="gerencia">Gerência</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <p>Quando deseja receber nosso retorno</p>
+                        <ul>
+                            <li>
+                                <label for="manha">Manhã
+                                    <input type="radio" name="horario" value="manha" id="manha">
+                                </label>
+                            </li>
+                            <li>
+                                <label for="tarde">Tarde
+                                    <input type="radio" name="horario" value="tarde" id="tarde">
+                                </label>
+                            </li>
+                            <li>
+                                <label for="noite">Noite
+                                    <input type="radio" name="horario" value="noite" id="noite">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="div-50">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d67603.7518586893!2d-52.13826762285068!3d-15.886212686640498!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2sbr!4v1681261811815!5m2!1spt-PT!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </div>
     <footer>
         <section>
             <div class="item contato">
                 <h3>Dados de contato</h3>
-                <p> 
+                <p>
                     (44)9999-9999<br>
                     contato@falacomigobb.com<br>
                     Rua Minha Rua, 0171 - Centro<br>
@@ -105,4 +149,5 @@
         <script src="https://kit.fontawesome.com/b82f5ae24a.js" crossorigin="anonymous"></script>
     </footer>
 </body>
+
 </html>
